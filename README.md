@@ -1,4 +1,5 @@
 
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -47,7 +48,23 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![demo-image](https://pjreddie.com/media/image/Screen_Shot_2018-03-24_at_10.48.42_PM.png)
+## Raw Image
+
+![demo-image](https://raw.githubusercontent.com/YigitGunduc/data-labeler/master/raw_data/Street.jpg)
+
+## Extracted Data
+<table>
+  <tr>
+     <td>Extracted Person</td>
+     <td>Extracted Car</td>
+     <td>Extracted Bus</td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/YigitGunduc/data-labeler/master/labeled_data/person/0.8429918080208526.jpg" width=270 height=480></td>
+    <td><img src="https://raw.githubusercontent.com/YigitGunduc/data-labeler/master/labeled_data/car/0.44490062036087263.jpg" width=270 height=480></td>
+    <td><img src="https://github.com/YigitGunduc/data-labeler/blob/master/labeled_data/bus/0.6067948416207635.jpg?raw=true" width=270 height=480></td>
+  </tr>
+ </table>
 
 This project labels raw images for your machine learning, deep learning, or computer vision tasks. 
 By far this is the easiest and the most effective data labeling took out there.
@@ -82,25 +99,21 @@ pip install -r requirements.txt
 
 1. Clone the repo
 ```sh
-git clone https://github.com/github_username/repo_name.git
+git clone https://github.com/YigitGunduc/data-labeler.git
 ```
 2. Install Yolo [Yolo website link](https://pjreddie.com/darknet/yolo/)
-
-To install Yolo I already put yoloV3.cfg and coco.names file but due to the file
-size, Github doesn't let me put yoloV3.weights file here, but it is easy to install and well 
-documented so I don't believe you will have a hard time installing it. To install 
-yoloV3.weights file check the link(https://pjreddie.com/darknet/yolo/) after your installed 
-it put it on the C:/user/repo/yolo folder. When you run the program Python will check to 
-see Yolo.weights file/
-
+ 
+* Go to the Yolo's website
+* Install yoloV3.weights 
+* Place it in the 'yolo' folder
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+* Put the images you want to extract the object from in the raw data folder.
 
-To use the project place your raw images in the 'raw_images_folder' when you 
-run the program with 'python data-labeler.py' command  it will go through all of them 
-and extract objects from each photo and put extracted images to the corresponding 
-folder in 'labeled_data' folder.
+* To label, data run the 'data labeler.py' file, it will go through all of the 
+images and extract objects from each photo and put extracted images to the 
+corresponding folder.
 
 
 <!-- ROADMAP -->
