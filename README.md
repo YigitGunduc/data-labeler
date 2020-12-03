@@ -20,8 +20,6 @@
     Extracts object from raw images to train machine learning or deep learning models.
     <br />
     <br />
-    <a href="https://github.com/YigitGunduc/data-labeler/">View Demo</a>
-	  <br />
     <a href="https://github.com/YigitGunduc/data-labeler/issues">Report Bug</a>
 	  <br />
     <a href="https://github.com/YigitGunduc/data-labeler/issues">Request Feature</a>
